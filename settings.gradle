@@ -1,0 +1,9 @@
+rootProject.name = "TestMicroFeature"
+include ':app'
+include ':core'
+include ':gateway'
+include ':module-home'
+
+project(':gateway').projectDir = new File(rootDir, "../micro-feature-android/gateway")
+project(':core').projectDir = new File(rootDir, "../micro-feature-android/core")
+project(':module-home').projectDir = new File(rootDir, "../micro-feature-android/module-home")
